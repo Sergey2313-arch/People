@@ -7,10 +7,17 @@
 }
 
 .people-logo {
-  margin: 0 auto 12px;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 10px;
   color: #61dafb;
-  font-size: 58px;
   line-height: 1;
+}
+
+.people-logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .header h1 {
@@ -45,8 +52,4 @@
 
 .header-button.primary {
   background: #149eca;
-}
-
-.header-button.secondary {
-  background: #23272f;
 }
