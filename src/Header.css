@@ -1,22 +1,72 @@
 .header {
-  padding: 36px 20px;
-  background: #282c34;
-  color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 56px 20px 64px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at top left, rgba(97, 218, 251, 0.35), transparent 32%),
+    linear-gradient(135deg, #111827 0%, #1d4ed8 55%, #7c3aed 100%);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  right: -80px;
+  bottom: -90px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-badge {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #dbeafe;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .header h1 {
-  margin: 8px 0;
-  font-size: 42px;
-}
-
-.header p {
   margin: 0;
-  font-size: 18px;
+  font-size: clamp(42px, 8vw, 76px);
+  line-height: 1;
 }
 
-.header-label {
-  color: #61dafb;
+.header-subtitle {
+  max-width: 620px;
+  margin: 18px auto 0;
+  color: #e0e7ff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.header-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.header-tags span {
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  backdrop-filter: blur(8px);
 }
