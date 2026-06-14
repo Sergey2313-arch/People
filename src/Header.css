@@ -1,15 +1,52 @@
 .header {
-  padding: 36px 20px;
+  min-height: 280px;
+  padding: 48px 20px 52px;
   background: #282c34;
   color: white;
+  text-align: center;
+}
+
+.people-logo {
+  margin: 0 auto 12px;
+  color: #61dafb;
+  font-size: 58px;
+  line-height: 1;
 }
 
 .header h1 {
-  margin: 8px 0;
+  margin: 0;
   font-size: 42px;
+  font-weight: 700;
 }
 
 .header p {
-  margin: 0;
+  margin: 10px 0 0;
+  color: #d5d8df;
   font-size: 18px;
+  font-weight: 600;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.header-button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-button.primary {
+  background: #149eca;
+}
+
+.header-button.secondary {
+  background: #23272f;
 }
