@@ -4,10 +4,9 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <p className="header-badge">React homework</p>
         <h1>People Cards</h1>
         <p className="header-subtitle">
-          Небольшое приложение с карточками людей, выложенными плиткой
+          Карточки людей, выложенные плитками
         </p>
 
         <div className="header-tags">
