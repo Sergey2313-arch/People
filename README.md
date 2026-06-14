@@ -1,8 +1,5 @@
-# People
-
-React homework project with people cards laid out as a grid.
-
-## Run
+домашнее задание 
+чтобы запустить:
 
 ```bash
 npm install
