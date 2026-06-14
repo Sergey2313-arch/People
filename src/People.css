@@ -1,0 +1,67 @@
+.people-page {
+  min-height: 66vh;
+  padding: 40px 24px;
+  background: #f4f7fb;
+}
+
+.people-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.person-card {
+  overflow: hidden;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+.person-avatar {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.person-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.person-info h2 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 22px;
+}
+
+.person-role {
+  margin: 0 0 10px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.person-city {
+  margin: 0 0 12px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.person-description {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.5;
+}
